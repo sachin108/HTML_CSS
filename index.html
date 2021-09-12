@@ -1,283 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .navbar{
-            margin-top: 10px;
-            overflow: hidden;
-            position: fixed;
-            top:0;
-            width: 100%;
-            background: rgba(97, 89, 89, 0.541);
-            padding: 1px;
-            margin-bottom: 10px;
-        }
-        li{
-            display: inline;
-            font-size: 30px;
-            font-weight: 700px;
-            color: black;
-        }
-        ul{
-            display: flex;
-            justify-content: space-evenly;
-        }
-        a{
-            text-decoration: none;
-        }
-        li a:hover{
-            background:white;
-            padding: 10px;
-        }
-        .img1 {
-            margin-top: 130px;
-        }
-        .top-left{
-            position:absolute;
-            top: 170px;
-            left:16px;
-            font-size: 50px;
-            color: white;
-        }
-        .top-left1{
-            position:absolute;
-            top: 1380px;
-            right:286px;
-            font-size: 40px;
-        }
-        .top-left2{
-            position:absolute;
-            top: 1600px;
-            right:286px;
-            font-size: 40px;
-        }
-        .top-left3{
-            position:absolute;
-            top: 1820px;
-            right:286px;
-            font-size: 40px;
-        }
-        .contain1{
-            margin-top: 80px;
-            font-size: 30px;
-            text-align: center;
-        }
-        .image{
-            display: inline-block;
-            width: 20%;
-            border-radius: 50%;
-        }
-        .contain2{
-            width: 50%;
-            background:rgba(97, 89, 89, 0.473);
-        }
-        p.contain3{
-            padding-left: 7px;
-            padding-right: 7px;
-            word-spacing: 10px;
-        }
-        .container{
-            display: flex;
-        }
-        .contain4{
-            margin-top: 0px;
-            margin-left: 20px;
-            display: flex;
-            flex-direction: column;
-        }
-        .image2{
-            margin: 0;
-            margin-bottom: 20px;
-            width: 700px;
-            height: 200px;
-        }
-        .contact{
-            background: rgb(231, 168, 231);
-            padding: 10px;
-        }
-        .contain_1{
-            display: flex;
-        }
-        .contain_2{
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            padding-top: 12px;
-            padding-left: 10px; 
-            padding-right: 10px;
-            background-color: white;
-            border-radius: 10px;
-        }
-        .contain_3{
-            display: flex;
-            align-items: stretch;
-            text-align: center;
-            margin-left: 5px;
-            margin-right: 15px;
-        }
-        ._img{
-            border-radius: 5px;
-            width: 100%;
-            height: 140px;
-        }
-        p.contain_1.contain_2.contain_3{
-            text-align: left;
-        }
-        h1.contain_1.contain_2.contain_3{
-            color:white
-        }
-        .center{
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .align1{
-            padding-left: 5px;
-            padding-right: 15px;
-        }
-        .btn{
-            color: white;
-            padding: 10px 100px;
-            border-radius: 5px;
-            margin: 10px -10px;
-            background: red;
-            border: none;
-        }
-        .btn:hover{
-            background: black;
-        }
-    </style>
+    <title>Practical-9</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
+
 <body>
-    <a name="top"></a>
-    <div class="navbar">
-        <ul>
-            <li><a href="#top">HOME</a></li>
-            <li><a href="#About Us">ABOUT US</a></li>
-            <li><a href="#Team">TEAM</a></li>
-            <li><a href="#technology">TECHNOLOGIES</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-        </ul>
-    </div>
-    <div>
-        <img src="x.jpg" width="100%" class="img1">
-        <div class="top-left">PRACTICAL - 8</div>
-    </div>
-    <div class="contain1">
-        <a name="Team"></a>
-        <h3>
-            Team Members
-        </h3>
-    </div>
-    <ul>
-        <img src="https://i.pinimg.com/originals/d5/b0/4c/d5b04cc3dcd8c17702549ebc5f1acf1a.png" class="image">
-        <img src="https://as1.ftcdn.net/v2/jpg/01/13/41/66/500_F_113416666_a7CuS6cvc6D5P5ezUbsTMexJHm9iAgga.jpg" class="image">
-        <img src="https://i.pinimg.com/originals/d5/b0/4c/d5b04cc3dcd8c17702549ebc5f1acf1a.png" class="image">
-        <img src="https://as1.ftcdn.net/v2/jpg/01/13/41/66/500_F_113416666_a7CuS6cvc6D5P5ezUbsTMexJHm9iAgga.jpg" class="image">
-    </ul>
-    <div>
-        <a name="About Us"></a>
-        <h2 class="contain1">About Us</h2>
-        <div class="container">
-            <div class="contain2">
-                <h3>
-                    About Projects
-                </h3>
-                <p class="contain3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore esse provident vero voluptas placeat facere tempore eos ipsum repellendus magnam, inventore sit accusamus recusandae aliquid molestiae quod exercitationem. Libero suscipit veritatis ipsam. Quod pariatur ad voluptate modi voluptas. Sed consequatur, cumque amet hic tenetur aperiam suscipit modi beatae omnis eum itaque accusantium cupiditate praesentium reprehenderit eius laudantium veniam quibusdam magnam numquam rem animi sit, error vel! Laborum amet vitae omnis inventore unde ipsum dignissimos sit nostrum minus deleniti, a aperiam quo in eligendi suscipit et tenetur, enim sunt sint provident expedita? Sint, quo iure. Magni nihil nisi nemo porro tenetur dicta neque, deleniti eos mollitia voluptas laborum voluptatum similique, hic nulla aperiam distinctio rem, ex sequi quos? Possimus ipsum vero ullam alias molestias a cupiditate exercitationem beatae consectetur, amet eligendi porro. Tempora eveniet aliquid molestias odio, nihil quasi deserunt dolorem, veniam illum natus amet harum provident, architecto facere mollitia nemo dolores! Ab mollitia laborum, eos dolorum architecto id commodi facilis earum illo laboriosam animi hic, quas corporis. Ex nihil repellat exercitationem laudantium facilis, eveniet similique obcaecati, fugiat blanditiis voluptatem beatae consequuntur labore ab quisquam est explicabo? Nihil necessitatibus blanditiis mollitia sunt illo debitis quibusdam et nemo saepe voluptatum nesciunt esse quo quam, officiis tempore. Expedita, in omnis iste perspiciatis cumque voluptatem non ducimus quas ea amet architecto numquam ipsum blanditiis dolorum odio vel libero exercitationem, illum officia temporibus quis explicabo. Doloribus, aperiam modi. Labore cupiditate aut ab dolor animi? Maiores omnis veniam reiciendis. Nam, natus iste vel fugit iusto pariatur?
+    <div id="container">
+        <div id="header">
+            <input type="checkbox" id="chk" />
+            <label for="chk" class="show-btn">
+                <i class="fa fa-bars"></i>
+            </label>
+            <ul class="menu">
+                <li><a href="#top">Home</a></li>
+                <li><a href="#about">About US</a></li>
+                <li><a href="#circle-container">Team</a></li>
+                <li><a href="#Technologies">Technologies</a></li>
+                <li><a href="#contact">contact</a></li>
+
+                <label for="chk" class="hide-btn">
+                    <i class="fa fa-times"></i>
+                </label>
+            </ul>
+        </div>
+        <a name="top"></a>
+        <img src="x.jpg" width="100%" class="img1">		
+        <div id="banner">
+            <h2>PRACTICAL - 9</h2>
+        </div>
+        <div id="circle-container">
+            <h1>Team Members</h1>
+            <div class="circle">
+                <img src="https://i.pinimg.com/originals/d5/b0/4c/d5b04cc3dcd8c17702549ebc5f1acf1a.png" alt="" />
+            </div>
+            <div class="circle">
+                <img src="https://as1.ftcdn.net/v2/jpg/01/13/41/66/500_F_113416666_a7CuS6cvc6D5P5ezUbsTMexJHm9iAgga.jpg" alt="" />
+            </div>
+            <div class="circle">
+                <img src="https://i.pinimg.com/originals/d5/b0/4c/d5b04cc3dcd8c17702549ebc5f1acf1a.png" alt="" />
+            </div>
+            <div class="circle">
+                <img src="https://as1.ftcdn.net/v2/jpg/01/13/41/66/500_F_113416666_a7CuS6cvc6D5P5ezUbsTMexJHm9iAgga.jpg" alt="" />
+            </div>
+        </div>
+        <div id="sec2-container">
+            <a name="about"></a>
+            <h1>About Us</h1>
+            <div id="left-side">
+                <div class="left-content">
+                    <div id="left-p">
+                        <h2>About Projects</h2>
+                        <p>
+                            Construction project Construction-bandw.jpg A project is a
+                            series of related a tasks which when they are carried in the
+                            correct order will lead to the completion of the project.
+                            Projects are temporary, generally resulting in the creation of a
+                            tangible product or outcome. This is as opposed to a programme,
+                            which is a series of interrelated projects that may be carried
+                            out repeatedly or continuously in order to support an ongoing
+                            process. For more information, see Project v programme. A
+                            construction project, sometimes just referred to as a ‘project’,
+                            is the organised process of constructing, renovating,
+                            refurbishing, etc. a building, structure or infrastructure. The
+                            project process typically starts with an overarching requirement
+                            which is developed through the creation of a brief, feasibility
+                            studies, option studies, design, financing and construction.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="right-side">
+                <div class="artical" id="p1">
+                    <h2 style="color: azure;">Project-1</h2>
+                </div>
+                <div class="artical" id="p2">
+                    <h2 style="color: azure;">Project-2</h2>
+                </div>
+                <div class="artical" id="p3">
+                    <h2 style="color: azure;">Project-3</h2>
+                </div>
+            </div>
+        </div>
+        <div id="grid-container">
+            <a name="Technologies"></a>
+            <h1>Technologies Used</h1>
+            <div class="grid">
+                <img src="html-1080x500.png" alt="" />
+                <h4>Introduction to HTML</h4>
+                <p>
+                    The HyperText Markup Language, or HTML is the standard markup
+                    language for documents designed to be displayed in a web browser. It
+                    can be assisted by technologies such as Cascading Style Sheets (CSS)
+                    and scripting languages such as JavaScript.
                 </p>
+
+                <a href="https://www.geeksforgeeks.org/html-tutorials/">Read More</a>
             </div>
-            <div class="contain4">
-                <img src="y.jpg" class="image2">
-                <div class="top-left1">Project-1</div>
-                <img src="y.jpg" class="image2">
-                <div class="top-left2">Project-2</div>
-                <img src="y.jpg" class="image2" style="margin-bottom: 0px;">
-                <div class="top-left3">Project-3</div>
+            <div class="grid">
+                <img src="css.png" alt="" />
+                <h4>Introduction to CSS</h4>
+                <p>
+                    Cascading Style Sheets (CSS) is a style sheet language used for
+                    describing the presentation of a document written in a markup
+                    language such as HTML. CSS is a cornerstone technology of the World
+                    Wide Web, alongside HTML and JavaScript.
+                </p>
+
+                <a href="https://www.geeksforgeeks.org/css-tutorials/">Read More</a>
             </div>
-        </div>
-    </div>
-    <div>
-        <a name="technology"></a>
-        <h1 class="contain1">
-            Technologies Used
-        </h1>
-        <div>
-            <div class="contain_1">
-                <div class="contain_3">
-                    <div class="contain_2">
-                        <div class="center">
-                            <img src="html.png" class="_img">
-                        </div>
-                        <h4>
-                            Introduction to HTML
-                        </h4>
-                        <div class="align1">
-                            <p>
-                                HTML stands for HyperText Markup Language. It is used to design web pages using a markup language.
-                            </p>
-                        </div>
-                        <button class="btn" onclick="window.location.href = 'https://www.geeksforgeeks.org/html-tutorials/'">Read More</button>
-                    </div>
-                </div>
-                <div class="contain_3">
-                    <div class="contain_2">
-                        <div class="center">
-                            <img src="css.png" class="_img">
-                        </div>
-                        <h4>
-                            Introduction to CSS
-                        </h4> 
-                        <div class="align1">
-                            <p>
-                                CSS (Cascading Style Sheets) is a stylesheet language used to design the webpage to make it attractive.
-                            </p>
-                        </div>
-                        <button class="btn" onclick="window.location.href = 'https://www.geeksforgeeks.org/css-tutorials/'">Read More</button>
-                    </div>
-                </div>
-                <div class="contain_3">
-                    <div class="contain_2">
-                        <div  class="center">
-                            <img src="jqu.png" class="_img">
-                        </div>
-                        <h4>
-                            Introduction to JQuery
-                        </h4>
-                        <div class="align1">
-                            <p>
-                                JavaScript (JS) is the world most popular lightweight, interpreted  compiled programming language.
-                            </p>
-                        </div>
-                        <button class="btn" onclick="window.location.href = 'https://www.geeksforgeeks.org/javascript-tutorial/'">Read More</button>
-                    </div>
-                </div>
-                <div class="contain_3">
-                    <div class="contain_2">
-                        <div class="center">
-                            <img src="boot.png" class="_img">
-                        </div>
-                        <h4>
-                            Introduction to Bootstrap
-                        </h4>
-                        <div class="align1">
-                            <p>
-                                Bootstrap is a free and open-source tool collection for creating responsive websites and web application
-                            </p>
-                        </div>
-                        <button class="btn" onclick="window.location.href = 'https://www.geeksforgeeks.org/bootstrap-tutorials/'">Read More</button>
-                    </div>
-                </div>
+            <div class="grid">
+                <img src="download2.png" alt="" />
+                <h4>Introduction to jQuery</h4>
+                <p>
+                    JavaScript (/ˈdʒɑːvəˌskrɪpt/), often abbreviated as JS, is a
+                    programming language that conforms to the ECMAScript
+                    specification.JavaScript is high-level, often just-in-time compiled,
+                    and multi-paradigm. It has curly-bracket syntax.
+                </p>
+
+                <a href="https://www.geeksforgeeks.org/javascript-tutorial/">Read More</a>
+            </div>
+            <div class="grid">
+                <img src="download3.png" alt="" />
+                <h4>Introduction to Bootstrap</h4>
+                <p>
+                    Bootstrap is a free and open-source CSS framework directed at
+                    responsive, mobile-first front-end web development. It contains CSS-
+                    and (optionally) JavaScript-based design templates for typography,
+                    forms, buttons, navigation, and other interface components.
+                </p>
+
+                <a href="https://www.geeksforgeeks.org/bootstrap-tutorials/">Read More</a>
             </div>
         </div>
-    </div>
-    <div>
-        <h1 class="contain1">Contact</h1>
-    </div>
-    <div class="contact contain1">
         <a name="contact"></a>
-        <h4>Website Template for Practical-8 &copy;<a href="https://www.beta-labs.in/">Beta-labs</a></h4>
-        <a href="#top">Back to top</a>
+        <h1>Contact</h1>
+        <div id="footer">
+            <p>
+                <a href="#top">Back to top</a>
+            </p>
+        </div>
     </div>
 </body>
+
 </html>

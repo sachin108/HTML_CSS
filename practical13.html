@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-12</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <style>
+        *{
+            top: 0%;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* height: 100vh; */
+        }
+        
+        table{
+            border: 2px solid black;
+            width: 900px;
+            margin-top:-30px;
+            height: 100vh;
+            border-radius: 5px ;
+        }
+        
+        table,tr,th,td{
+            border-collapse: collapse;
+            border-bottom: 2px solid grey;
+            padding: 0px 15px;
+            border-radius: 5px;
+        }
+        td,pre{
+            font-family: Arial;
+        }
+        th{
+            border-top: 2px solid black;
+            padding: 20px 10px;
+            font-size: 20px;
+            font-family: Arial;
+        }
+        h1{
+            background-color: black;
+            color: white;
+            width: 896px;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0px;
+            border: 2px solid black;
+        }
+        .clr a{
+            text-decoration: none;
+            color: rgb(4, 70, 4);
+        }
+        .a1 a{
+            text-decoration: none;
+            color: grey;
+        }
+        i{
+            cursor: pointer;
+        }
+        i:hover{
+            color: blue;
+        }
+        .xyz{
+            height: 50px;
+        }
+        .a1{
+            background-color: rgb(221, 236, 231);
+            text-align: center;
+         }
+        .a2{
+            background-color:rgb(226, 200, 190);
+            text-align: center;
+        }
+        .a3{
+            background-color:rgb(229, 234, 194);
+            text-align: center;
+        }
+        .a4{
+            background-color:rgb(181, 228, 181);
+            text-align: center;
+        }
+        .button {
+            background-color: #6921bdc0;
+            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .button:hover {
+            background-color: #42829e;
+            color: white;
+        }
+    .xx
+        background-color: ivory;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <table>
+            <h1>SELECT YOUR PLAN</h1>
+            <tr class="xyz">
+                <th class="a1" style="font-size: 30px;"> <i class="fa fa-calculator"></i> Basic</th>
+                <th class="a2" style="font-size: 30px;"><i class="fa fa-skyatlas"></i>Plus</th>
+                <th class="a3" style="font-size: 30px;"><i class="fa fa-telegram"></i> Deluxe</th>
+                <th class="a4" style="font-size: 30px;"><i class="fa fa-apple"></i>Pro</th>
+            </tr>
+            <tr >
+                <td class="a1" style="background-color: ivory;">
+                    Rs.500/-
+                </td >
+                <td class="a2" style="background-color: ivory;">
+                    Rs.1500/-
+                </td>
+                <td class="a3" style="background-color: ivory;">
+                    Rs.2500/-
+                </td >
+                <td class="a4" style="background-color: ivory;">
+                    Rs.3500/-
+                </td>
+            </tr>
+            <tr>
+                <td class="a1">
+                    3 Users
+                </td>
+                <td class="a2">
+                    5 Users
+                </td>
+                <td class="a3">
+                    10 Users
+                </td>
+                <td class="a4">
+                    Unlimited
+                </td>
+            </tr>
+            <tr >
+                <td class="a1" style="background-color: ivory;">
+                    10 sites
+                </td>
+                <td class="a2" style="background-color: ivory;">
+                    25 sites
+                </td>
+                <td class="a3" style="background-color: ivory;">
+                    100 Sites
+                </td>
+                <td class="a4" style="background-color: ivory;">
+                    Unlimited
+                </td>
+            </tr>            
+            <tr>
+                <td class="a1">
+                    50 MB
+                </td>
+                <td class="a2">
+                    250 MB
+                </td>
+                <td class="a3">
+                    1 GB
+                </td>
+                <td class="a4">
+                    5 GB
+                </td>
+            </tr>
+            <tr>
+            <td class="a1" style="background-color: ivory;">
+                Included
+            </td>
+            <td class="a2" style="background-color: ivory;">
+                Included
+            </td>
+            <td class="a3" style="background-color: ivory;">
+                Included
+            </td>
+            <td class="a4" style="background-color: ivory;">
+                Included
+            </td>
+            </tr>
+            <tr >
+                <td class="a1">
+                    <i class="fa fa-check " style=color:green;></i>                
+                </td>
+                <td class="a2">
+                    <i class="fa fa-check" style=color:green;></i>                
+                </td>
+                <td class="a3">
+                    <i class="fa fa-check"style=color:green;></i>                
+                </td>
+                <td class="a4">
+                    <i class="fa fa-check" style=color:green;></i>                
+                </td>
+                </tr>
+                <tr >
+                    <td class="a1" style="background-color: ivory;">
+                        <i class="fa fa-times" style=color:red;></i>                
+                    </td>
+                    <td class="a2" style="background-color: ivory;">
+                        <i class="fa fa-check" style=color:green;></i>                
+                    </td>
+                    <td class="a3" style="background-color: ivory;">
+                        <i class="fa fa-check" style=color:green;></i>                
+                    </td>
+                    <td class="a4" style="background-color: ivory;">
+                        <i class="fa fa-check" style=color:green;></i>                
+                    </td>                    
+                </tr>
+                <tr>
+                    <td class="a1">
+                        <i class="fa fa-times" style=color:red;></i>                
+                    </td>
+                    <td class="a2">
+                        <i class="fa fa-check" style=color:green;></i>                
+                    </td>
+                    <td class="a3">
+                        <i class="fa fa-check" style=color:green;></i>                
+                    </td>
+                    <td class="a4">
+                        <i class="fa fa-check" style=color:green;></i>                
+                    </td>                    
+                </tr>
+                <tr >
+                <td class="a1" style="background-color: ivory;">
+                    <i class="fa fa-times" style=color:red;></i>                
+                </td>
+                <td class="a2" style="background-color: ivory;">
+                    <i class="fa fa-times" style=color:red;></i>                
+                </td>
+                <td class="a3" style="background-color: ivory;">
+                    <i class="fa fa-check" style=color:green;></i>                
+                </td>
+                <td class="a4" style="background-color: ivory;">
+                    <i class="fa fa-check" style=color:green;></i>                
+                </td>                    
+            </tr>
+            <tr>
+                <td class="a1">
+                    <i class="fa fa-times" style=color:red;></i>                
+                </td>
+                <td class="a2">
+                    <i class="fa fa-times" style=color:red;></i>                
+                </td>
+                <td class="a3">
+                    <i class="fa fa-times" style=color:red;></i>                
+                </td>
+                <td class="a4">
+                    <i class="fa fa-check"style=color:green;></i>                
+                </td>                    
+            </tr>
+            <tr >
+                <td class="a1" style="background-color: ivory;">
+                    <button class="button" type="button">SIGN UP</button> 
+                </td>
+                <td class="a2" style="background-color: ivory;">
+                    <button class="button" type="button">SIGN UP</button> 
+                </td>
+                <td class="a3" style="background-color: ivory;">
+                    <button class="button" type="button">SIGN UP</button> 
+                </td>
+                <td class="a4 " style="background-color: ivory;">
+                    <button class="button" type="button">SIGN UP</button> 
+                </td>                    
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

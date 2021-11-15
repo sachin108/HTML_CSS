@@ -1,61 +1,104 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<style>
-			body {
-				position: absolute;
-				left: 0%;
-				text-align: center;
-			}
-			.container {
-				justify-content: center;
-				align-items: center;
-				display: flex;
-				height: 100%;
-				text-align: center;
-			}
-			button {
-             	width: 90px;
-				height: 60px;
-				font-size: 30px;
-				background-color: rgb(19, 2, 27);
-				color: rgb(220, 226, 233);
-			}
-			button:hover {
-				background-color: rgb(83, 104, 224);
-				color: rgb(3, 3, 3);
-			}
-			h2 {
-				color: black;
-				margin: 0 50px;
-				font-size: 45px;
-			}
-			h1 {
-				font-size: 35px;
-				color: rgb(173, 22, 219);
-				text-align: center;
-				padding-left: 10%;
-			}
-		</style>
-	</head>
-	<body>
-		<h1>Counter</h1>
-		<div class="container">
-			<button onclick="increment()">+</button>
-		    <h2 id="counting"></h2>
-			<button onclick="decrement()">-</button>
-		</div>
-		<script>
-			var counter = 0;
-			document.getElementById("counting").innerText = counter;
-			function increment() {
-				counter = counter + 1;
-				document.getElementById("counting").innerText = counter;
-			}
-			function decrement() {
-				counter = counter - 1;
-				document.getElementById("counting").innerText = counter;
-			}
-		</script>
-	</body>
-</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.f{
+    background-color: rgb(14, 12, 12);
+    height: 30px;
+    color: blanchedalmond;
+    font-size: 18px;
+
+}
+.s{
+    background-color: rgb(80, 72, 72);
+    height: 60px;
+}
+pre{
+    margin-top: 0px;
+}
+.t{
+    font-size: 20px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: right;
+  }
+  .right{
+      float: left;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+  }
+  
+  li a:hover {
+    background-color:rgb(221, 34, 34);
+  }
+  .xx {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+  }
+  .qw{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    display: inline-block;
+    height: 50px;    
+    background:transparent;
+    transition: all 0.6s;
+    padding-left: 20px; 
+    padding-right: 20px;
+    line-height: 50px;
+  }
+
+    </style>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+</head>
+<body>
+    <div class="f">
+        <pre style="font-family: Arial, Helvetica, sans-serif; margin-left: 5px;"><i class="fa fa-envelope"></i> sachin108rajput@hotmail.com          <i class="fa fa-phone"></i> +1 55589 87643                                                                                                                      <i class="fa fa-twitter"></i>      <i class="fa fa-facebook"></i>      <i class="fa fa-instagram"></i>     <i class="fa fa-linkedin"></i></pre>
+    </div>
+    <div class="s">
+        <ul>
+            <li class="right"><a href="#about" style="font-size: 25px; font-weight: 700;">DAY</a></li>
+            <li><a href="#about">Contact</a></li>
+            <li><a href="#about">Dropdown</a></li>
+            <li><a href="#about">Pricing</a></li>
+            <li><a href="#about">Portfolio</a></li>
+            <li><a href="#contact">Services</a></li>
+            <li><a href="#about">Team</a></li>
+            <li><a href="#news">About</a></li>
+            <li><a class="active" href="#home">Home</a></li>
+          </ul>          
+    </div>
+    <div>
+        <img src="x.jpg" width="1334px" height="540px">
+        <div class="xx"><h1 style="font-weight: 900; font-size: 40px;">WELCOME TO DAY</h1>
+        <h4 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size:25px; font-weight: 500;">We are team of talented designers making website with Bootstrap</h4>
+        <a href="#" class="qw">GET STARTED</a>
+        </div>
+    </div>
+</body>
+</html> 

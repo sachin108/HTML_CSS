@@ -1,104 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-.f{
-    background-color: rgb(14, 12, 12);
-    height: 30px;
-    color: blanchedalmond;
-    font-size: 18px;
-
-}
-.s{
-    background-color: rgb(80, 72, 72);
-    height: 60px;
-}
-pre{
-    margin-top: 0px;
-}
-.t{
-    font-size: 20px;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  li {
-    float: right;
-  }
-  .right{
-      float: left;
-  }
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-  }
-  
-  li a:hover {
-    background-color:rgb(221, 34, 34);
-  }
-  .xx {
-    color: rgb(255, 255, 255);
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
-  }
-  .qw{
-    color: white;
-    font-size: 30px;
-    text-decoration: none;
-    display: inline-block;
-    height: 50px;    
-    background:transparent;
-    transition: all 0.6s;
-    padding-left: 20px; 
-    padding-right: 20px;
-    line-height: 50px;
-  }
-
-    </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practical-15</title>
     <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
-</head>
-<body>
-    <div class="f">
-        <pre style="font-family: Arial, Helvetica, sans-serif; margin-left: 5px;"><i class="fa fa-envelope"></i> sachin108rajput@hotmail.com          <i class="fa fa-phone"></i> +1 55589 87643                                                                                                                      <i class="fa fa-twitter"></i>      <i class="fa fa-facebook"></i>      <i class="fa fa-instagram"></i>     <i class="fa fa-linkedin"></i></pre>
-    </div>
-    <div class="s">
-        <ul>
-            <li class="right"><a href="#about" style="font-size: 25px; font-weight: 700;">DAY</a></li>
-            <li><a href="#about">Contact</a></li>
-            <li><a href="#about">Dropdown</a></li>
-            <li><a href="#about">Pricing</a></li>
-            <li><a href="#about">Portfolio</a></li>
-            <li><a href="#contact">Services</a></li>
-            <li><a href="#about">Team</a></li>
-            <li><a href="#news">About</a></li>
-            <li><a class="active" href="#home">Home</a></li>
-          </ul>          
-    </div>
-    <div>
-        <img src="x.jpg" width="1334px" height="540px">
-        <div class="xx"><h1 style="font-weight: 900; font-size: 40px;">WELCOME TO DAY</h1>
-        <h4 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size:25px; font-weight: 500;">We are team of talented designers making website with Bootstrap</h4>
-        <a href="#" class="qw">GET STARTED</a>
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: black;
+        font-family: "Open Sans", sans-serif;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        background-color: whitesmoke;
+        width: 400px;
+        border-radius: 5px;
+        overflow: hidden;
+      }
+      .header {
+        background-color: #f7f7f7;
+      }
+      .header h2 {
+        padding: 20px;
+        text-align: center;
+      }
+      .form {
+        padding: 20px 30px;
+      }
+      .form-control {
+        margin-bottom: 10px;
+        padding-bottom: 20px;
+        position: relative;
+      }
+      .form-control label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      .form-control input {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        outline: none;
+        border: 1px solid black;
+      }
+      .form-control i {
+        position: absolute;
+        right: 10px;
+        top: 40px;
+        visibility: hidden;
+      }
+      .form-control small {
+        position: absolute;
+        left: 0;
+        margin-top: 5px;
+        visibility: hidden;
+      }
+      .form button {
+        display: block;
+        width: 100%;
+        background-color: blue;
+        color: white;
+        padding: 10px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+      }
+      .form-control.success input {
+        border-color: rgb(48, 207, 48);
+      }
+      .form-control.success .fa-check-circle {
+        visibility: visible;
+        color: rgb(48, 207, 48);
+      }
+      .form-control.error input {
+        border-color: red;
+      }
+      .form-control.error .fa-exclamation-circle {
+        color: red;
+        visibility: visible;
+      }
+      .form-control.error small {
+        visibility: visible;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Create Account</h2>
+      </div>
+      <form class="form" id="form">
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter Username" />
+          <i class="fa fa-check-circle"></i>
+          <i class="fa fa-exclamation-circle"></i>
+          <small>Error Msg</small>
         </div>
+
+        <div class="form-control">
+          <label for="email">Email ID </label>
+          <input type="text" id="email" placeholder="Enter Email Id" />
+          <i class="fa fa-check-circle"></i>
+          <i class="fa fa-exclamation-circle"></i>
+          <small>Error Msg</small>
+        </div>
+
+        <div class="form-control">
+          <label for="password1">Password</label>
+          <input type="password" id="password1" placeholder="Enter Password" />
+          <i class="fa fa-check-circle"></i>
+          <i class="fa fa-exclamation-circle"></i>
+          <small>Error Msg</small>
+        </div>
+
+        <div class="form-control">
+          <label for="password2">Re-Enter Password</label>
+          <input
+            type="password"
+            id="password2"
+            placeholder="Enter Password Again"
+          />
+          <i class="fa fa-check-circle"></i>
+          <i class="fa fa-exclamation-circle"></i>
+          <small>Error Msg</small>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
     </div>
-</body>
-</html> 
+    <script>
+      const form = document.getElementById("form");
+      const username = document.getElementById("username");
+      const email = document.getElementById("email");
+      const password1 = document.getElementById("password1");
+      const password2 = document.getElementById("password2");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault(); // data will not submit to server
+        checkInputs();
+      });
+
+      function checkInputs() {
+        const usernameValue = username.value.trim();
+        const emailValue = email.value.trim();
+        const password1Value = password1.value.trim();
+        const password2Value = password2.value.trim();
+
+        if (usernameValue === "") {
+          showError(username, "Username can not be blank");
+        } else {
+          showSuccess(username);
+        }
+        if (emailValue === "") {
+          showError(email, "Email Id can not be blank");
+        } else if (!isEmailValid(emailValue)) {
+          showError(email, "Email is not Valid");
+        } else {
+          showSuccess(email);
+        }
+
+        if (password1Value === "") {
+          showError(password1, "Password can not be blank");
+        } else {
+          showSuccess(password1);
+        }
+
+        if (password2Value === "") {
+          showError(password2, "Password can not be blank");
+        } else if (password2Value != password1Value) {
+          showError(password2, "Passwords not matched");
+        } else {
+          showSuccess(password2);
+        }
+      }
+
+      function showError(input, msg) {
+        const formControl = input.parentNode;
+        formControl.className = "form-control error";
+        const small = formControl.querySelector("small");
+        small.innerHTML = msg;
+      }
+      function showSuccess(input) {
+        const formControl = input.parentNode;
+        formControl.className = "form-control success";
+      }
+
+      function isEmailValid(email1) {
+        return /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9]+)\.([a-zA-Z]{2,3})$/.test(
+          email1
+        );
+      }
+    </script>
+  </body>
+</html>

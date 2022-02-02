@@ -1,212 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Practical-15</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet"> 
+  
+    <link rel="stylesheet" href="style.css">
 
-      * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-      }
+    <link id="theme-style" rel="stylesheet" href="">
+  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <section class="s1">
+        <div class="mainContainer">
+            <div class="greeting_wrapper">
+                <h1>Sachin Rajput</h1>
+            </div>
 
-      body {
-        background-color: black;
-        font-family: "Open Sans", sans-serif;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .container {
-        background-color: whitesmoke;
-        width: 400px;
-        border-radius: 5px;
-        overflow: hidden;
-      }
-      .header {
-        background-color: #f7f7f7;
-      }
-      .header h2 {
-        padding: 20px;
-        text-align: center;
-      }
-      .form {
-        padding: 20px 30px;
-      }
-      .form-control {
-        margin-bottom: 10px;
-        padding-bottom: 20px;
-        position: relative;
-      }
-      .form-control label {
-        display: block;
-        margin-bottom: 5px;
-      }
-      .form-control input {
-        display: block;
-        width: 100%;
-        padding: 10px;
-        border-radius: 5px;
-        outline: none;
-        border: 1px solid black;
-      }
-      .form-control i {
-        position: absolute;
-        right: 10px;
-        top: 40px;
-        visibility: hidden;
-      }
-      .form-control small {
-        position: absolute;
-        left: 0;
-        margin-top: 5px;
-        visibility: hidden;
-      }
-      .form button {
-        display: block;
-        width: 100%;
-        background-color: blue;
-        color: white;
-        padding: 10px;
-        outline: none;
-        border: none;
-        border-radius: 5px;
-        text-align: center;
-      }
-      .form-control.success input {
-        border-color: rgb(48, 207, 48);
-      }
-      .form-control.success .fa-check-circle {
-        visibility: visible;
-        color: rgb(48, 207, 48);
-      }
-      .form-control.error input {
-        border-color: red;
-      }
-      .form-control.error .fa-exclamation-circle {
-        color: red;
-        visibility: visible;
-      }
-      .form-control.error small {
-        visibility: visible;
-        color: red;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="header">
-        <h2>Create Account</h2>
-      </div>
-      <form class="form" id="form">
-        <div class="form-control">
-          <label for="username">Username</label>
-          <input type="text" id="username" placeholder="Enter Username" />
-          <i class="fa fa-check-circle"></i>
-          <i class="fa fa-exclamation-circle"></i>
-          <small>Error Msg</small>
+            <div class="intro-wrapper">
+                <div class="nav-wrapper">
+                    <div class="dots-wrapper">
+                        <div id='dot-1' class="dots"></div>
+                        <div id='dot-2' class="dots"></div>
+                        <div id='dot-3' class="dots"></div>
+                    </div>
+
+                    <div id="navigation">
+                        <ul>
+                            <li><a href="http://">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="left-col">
+                    <img id="profilePic" src="sachin.jpg" alt="sachin108">
+                    <h5 style=" text-align:center; line-height:0; ">Personalize Theme</h5>
+                    <div class="themeOptions">
+                        <div data-mode="light" class="theme-dot" id="light-mode"></div>
+                        <div data-mode="dark" class="theme-dot" id="dark-mode"></div>
+                        <div data-mode="green" class="theme-dot" id="green-mode"></div>
+                        <div data-mode="purple" class="theme-dot" id="purple-mode"></div>
+                    </div>
+                </div>
+                <div class="right-col">
+                    <div id="previewShadow">
+                        <div id="preview">
+                            <div id="cornerTL" class="corner"></div>
+                            <div id="cornerTR" class="corner"></div>
+                            <h3>Lorem, ipsum dolor.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ipsam incidunt corrupti?</p>
+                            <div id="cornerBL" class="corner"></div>
+                            <div id="cornerBR" class="corner"></div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="form-control">
-          <label for="email">Email ID </label>
-          <input type="text" id="email" placeholder="Enter Email Id" />
-          <i class="fa fa-check-circle"></i>
-          <i class="fa fa-exclamation-circle"></i>
-          <small>Error Msg</small>
+    <section class="s2">
+        <div class="mainContainer">
+            <div class="about-wrapper">
+                <div class="about-me">
+                    <h4>Lorem, ipsum dolor.</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, id? Distinctio, commodi.</p>
+                    <hr>
+                    <h4>Lorem, ipsum.</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.<a href="CV108.pdf">Download Resume</a></p>
+                   
+                    <div id="skills">
+                        <ul>
+                            <li> Lorem </li>
+                            <li>Ipsum</li>
+                            <li>Dolor</li>
+                            <li>Amet</li>
+                        </ul>
+                        <ul>
+                            <li> Lorem </li>
+                            <li>Ipsum</li>
+                            <li>Dolor</li>
+                            <li>Amet</li>
+                        </ul>
+                    </div>
+            </div>
+            
+            <div class="social-links">
+                <img id="github_image" src="github.png" alt="">
+                <h3>Find me on Github and LinkedIn</h3>
+                <a href="">Github: @sachin108</a>
+                <br>
+                <a href="">LinkedIn: @sachin108</a>
+            </div>
+
+        </div> 
+    </section>
+
+    <section class="s1">
+        <div class="mainContainer">
+            <h3 style="text-align: center;">Some of my past projects</h3>
+            <div class="post_wrapper">
+                <div class="post">
+                    <img style="width: 300px; height: 300px;" class="thumbnail" src="https://play-lh.googleusercontent.com/wIf3HtczQDjHzHuu7vezhqNs0zXAG85F7VmP7nhsTxO3OHegrVXlqIh_DWBYi86FTIGk" alt="">
+                    <div class="post-preview">
+                        <h6 class="post-title">Lorem ipsum dolor sit amet consectetur.</h6>
+                        <p class="post-intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, mollitia amet. Animi.</p>
+                        <a style="margin: 5px; padding-bottom: 5px;" href="post.html">Read More</a>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <img style="width: 300px; height: 300px;" class="thumbnail" src="https://pbs.twimg.com/profile_images/1443927056304250887/eQGXDQcL_400x400.jpg" alt="">
+                    <div class="post-preview">
+                        <h6 class="post-title">Lorem ipsum dolor sit amet consectetur.</h6>
+                        <p class="post-intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, mollitia amet. Animi.</p>
+                        <a style="margin: 5px; padding-bottom: 5px;" href="post.html">Read More</a>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <img style="width: 300px; height: 300px;" class="thumbnail" src="https://www.scdn.co/i/_global/twitter_card-default.jpg" alt="">
+                    <div class="post-preview">
+                        <h6 class="post-title">Lorem ipsum dolor sit amet consectetur.</h6>
+                        <p class="post-intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, mollitia amet. Animi.</p>
+                        <a style="margin: 5px; " href="">Read More</a>
+                    </div>
+                </div>
+
+            </div>
         </div>
+    </section>
 
-        <div class="form-control">
-          <label for="password1">Password</label>
-          <input type="password" id="password1" placeholder="Enter Password" />
-          <i class="fa fa-check-circle"></i>
-          <i class="fa fa-exclamation-circle"></i>
-          <small>Error Msg</small>
+    <section class="s2">
+        <div class="mainContainer">
+            <h3 style="text-align: center;">Get in Touch</h3>
+            <form action="" id="contact-form">
+                <label for="">Name</label>
+                <input type="text" class="inputField" name="name">
+
+                <label for="">Subject</label>
+                <input type="text" class="inputField" name="Subject">
+
+                <label for="">Email</label>
+                <input type="text" class="inputField" name="Email">
+
+                <label for="">Message</label>
+                <textarea class="inputField" name="Message"></textarea>
+
+                <input id="submit-btn" type="submit" value="Send" class="submit-btn">
+            </form>
         </div>
+    </section>
 
-        <div class="form-control">
-          <label for="password2">Re-Enter Password</label>
-          <input
-            type="password"
-            id="password2"
-            placeholder="Enter Password Again"
-          />
-          <i class="fa fa-check-circle"></i>
-          <i class="fa fa-exclamation-circle"></i>
-          <small>Error Msg</small>
-        </div>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-    <script>
-      const form = document.getElementById("form");
-      const username = document.getElementById("username");
-      const email = document.getElementById("email");
-      const password1 = document.getElementById("password1");
-      const password2 = document.getElementById("password2");
+    <script type="text/javascript" src="script.js"></script>
 
-      form.addEventListener("submit", function (e) {
-        e.preventDefault(); // data will not submit to server
-        checkInputs();
-      });
-
-      function checkInputs() {
-        const usernameValue = username.value.trim();
-        const emailValue = email.value.trim();
-        const password1Value = password1.value.trim();
-        const password2Value = password2.value.trim();
-
-        if (usernameValue === "") {
-          showError(username, "Username can not be blank");
-        } else {
-          showSuccess(username);
-        }
-        if (emailValue === "") {
-          showError(email, "Email Id can not be blank");
-        } else if (!isEmailValid(emailValue)) {
-          showError(email, "Email is not Valid");
-        } else {
-          showSuccess(email);
-        }
-
-        if (password1Value === "") {
-          showError(password1, "Password can not be blank");
-        } else {
-          showSuccess(password1);
-        }
-
-        if (password2Value === "") {
-          showError(password2, "Password can not be blank");
-        } else if (password2Value != password1Value) {
-          showError(password2, "Passwords not matched");
-        } else {
-          showSuccess(password2);
-        }
-      }
-
-      function showError(input, msg) {
-        const formControl = input.parentNode;
-        formControl.className = "form-control error";
-        const small = formControl.querySelector("small");
-        small.innerHTML = msg;
-      }
-      function showSuccess(input) {
-        const formControl = input.parentNode;
-        formControl.className = "form-control success";
-      }
-
-      function isEmailValid(email1) {
-        return /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9]+)\.([a-zA-Z]{2,3})$/.test(
-          email1
-        );
-      }
-    </script>
-  </body>
+</body>
 </html>
+
+
+
